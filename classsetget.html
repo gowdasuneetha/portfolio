@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class person{
+                constructor(name,age,gender,mobileno,occupation){
+this.na=name;
+this.ag=age;
+this.ge=gender;
+this.mob=mobileno;
+this.occu=occupation;
+                }
+                set setheight(height){
+                    this.he=height;
+                }
+                set setcolor(color){
+                    this.co=color;
+                }
+                get getcolor(){
+                    return this.color;
+                }
+                get getheight(){
+                    return this.height;
+                }
+            }
+            const person1=new person("rahul",27,'male',9988665522,'software');
+            person1.setcolor="white";
+            person1.setheight="4.5ft"
+            console.log(person1);
+            const person2=new person("anu",20,'female',99844565522,'software');
+            person2.setcolor="fair";
+            person2.setheight="4ft";
+            console.log(person2);
+            const person3=new person("ram",27,'male',9981255522,'doctor');
+            person3.setcolor="white";
+            person3.setheight="4.7ft"
+            console.log(person3);
+
+
+
+
+
+            
+        </script>
+    </body>
+</html>

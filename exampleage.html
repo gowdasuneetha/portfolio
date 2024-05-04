@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head> 
+    <body>
+        enter age:
+        <input type="text" id="texage">
+        <small id="errage" style="color:red;"></small>
+        <button onclick="validate()">enter</button>
+    </body>
+    <script>
+        let userage=25;
+        let agepattern=/^(1[8-9]|[2-3][0-9]|40)$/;
+        function validate(){
+        if(agepattern.test(userage)||userage!==""){
+            console.log("valid age");
+        }else{
+            console.log("invalid age");
+        }}
+    </script>
+</html>

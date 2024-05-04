@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<htmml>
+    <head>
+
+    </head>
+    <body>
+        enter mobileno:
+        <input type="text" id="mobileno" name="one">
+        <small id="no1" style="color:red;"></small>
+        <button onclick="validate()">enter</button>
+        </body>
+        <script>
+function validate(){
+    let mobile=Number(document.getElementById("mobileno")).value;
+    let regexp=/^\d{10}$/;
+    if(mobile==undefined||mobile==""||mobile==null){
+        document.getElementById("no1").innerHTML="please enter number";
+    }
+    else if(regexp.test(mobile)==false){
+        document.getElementById("no1").innerHTML="please enter 10numbers";
+    }
+    else{
+        document.getElementById("no1").innerHTML="";
+    }
+}
+        </script>
+    
+</htmml>

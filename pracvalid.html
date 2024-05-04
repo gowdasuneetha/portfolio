@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        ENTER PASSWORD:<input type="text" id="abcd">
+        <small id="efgh" style="color:red;"></small>
+        <button onclick="verify()">enter</button><br>
+        </body>
+        <script>
+            function verify(){
+let fn=document.getElementById("abcd").value;
+let regexname=/^[a-aZ-Z]+$/;
+    if(fn==undefined||fn==""||fn==null){
+        document.getElementById("efgh").innerHTML="enter something";
+    }
+    else if(regexname.test(fn)){
+        document.getElementById("efgh").innerHTML="enter valid charcters only";
+    }
+        else{
+        document.getElementById("efgh").innerHTML="";
+    }}
+
+        </script>
+    
+</html>

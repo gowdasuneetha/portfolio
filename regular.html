@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var str="do anything,but let id produce joy.";
+            var pat=/[a-h]/g;    // [a-g]......>it describes from a to what we have to give the character like h
+            document.write(str.match(pat)+"<br>");
+</script>
+<script>
+    var str="healthy isn't a goal it's a way of living !";
+    var pat=/[^a-t]/g;  // it describes 
+    document.write(str.match(pat)+"<br>");
+</script>
+<script>
+    var str="life is full of miracles";
+    var pat=/[\w]/g;  // it describes the alphabets either capital or small & numbers,-underscore
+    document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+        var str="life is full of miracles ! 100%";
+var pat=/[\W]/g;  //only symbols will printed like !,&,% etc...
+document.write(str.match(pat)+"<br>");
+</script>
+<script>
+    var str="real courage is doing the right thing when nobody's looking.";
+    var pat=/[\d]/g; 
+    document.write(str.match(pat)+"<br>");
+</script>
+
+<script>
+    var str="national mathematics day is observed on december 22 .";
+    var pat=/[\d]/g;   //it prints only numbers
+    document.write(str.match(pat)+"<br>");
+
+</script>
+
+<script>
+        var str="national mathematics day is observed on december 22 .";
+        var pat=/[\D]/g;   // except numbers remaining all printed
+        document.write(str.match(pat)+"<br>");
+
+</script>
+<script>    
+ var str="lie is full of problems but overcome it live is beautiul !";
+ var pat=/[\s]/g;  //it describes the white space or new lines
+ document.write(str.match(pat)+"<br>")
+</script>
+
+<script>
+   var str="engineering day is being celebrated across the country on 15th september. the date of birth of Dr.Mokshagundam visvesvaraya, India's first civil engineer." 
+var pat=/[\S]/g;  // it describes each & every characters in string.
+document.write(str.match(pat)+"<br>");
+</script>
+<script>
+    var str="EDUCTION IS ONE THING NO ONE CAN TAKE AWAY FROM YOU";
+var str=/[A-E]/g;
+document.write(str.match(pat)+"<br>");
+</script>
+
+    </body>
+</html>

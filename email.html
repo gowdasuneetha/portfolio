@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        enter username:
+        <input type="text" id="tgmail" placeholder="username"><br>
+        enter password:
+        <input type="text" id="tgmail" placeholder="password"><br>
+        <small id="xrrgmail" style="color:red;"></small>
+        <button onclick="validate()">enter</button>
+    </body>
+    <script>
+        function validate(){
+            let gmail=document.getElementById("tgmail").value;
+            let regexp1=/^S([a-zA-Z][0-9])$/;
+            if(gmail==undefined||gmail==""||gmail==null){
+                document.getElementById("xrrgmail").innerHTML="enter something";
+            }
+            else if(regexp1.test(gmail)){
+                document.getElementById("xrrgmail").innerHTML="";
+            }
+            else {
+                document.getElementById("xrrgmail").innerHTML="please enter 12 characters";
+            }
+        }
+    </script>
+</html>

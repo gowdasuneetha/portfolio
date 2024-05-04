@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        enter age:
+        <input type="text" id="txtage">
+        <small id="errage" style="color:red;"></small>
+        <button onclick="validate()">enter</button>
+    </body>
+    <script>
+        function validate(){
+            let age=number(document.getElementById("txtage")).value;
+            let regexp=/^\d{}+$/;
+            if(age==undefined||age>18||age<=40){
+                document.getElementById("errage").innerHTML="please enter age";
+            }
+            else if(regexp.test(age)==false){
+                document.getElementById("errage").innerHTML="please enter age is above 18";
+  }
+  else {
+    document.getElementById("errage").innerHTML="please enter age limited is 40";
+
+  }
+        }
+    </script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>DOCUMENT</title>
+    </head>
+    <body>
+        ENTER NAME:<input type="text" id="abcd"><br>
+        <small id="efgh" style="color:red;"></small>
+        <button onclick="verify()">enter</button><br>
+        </body>
+        <script>
+function verify(){
+    let fn=document.getElementById("abcd").value;
+    if(fn==undefined||fn==""||fn==null){
+        document.getElementById("efgh").innerHTML="enter something";
+    }else{
+        document.getElementById("efgh").innerHTML="";
+    }
+}
+</script>
+<body>
+           ENTER NAME:<input type="text" id="fname">
+            <small id="efgh" style="color:maroon;"></small>
+            <button onclick="verify()">enter</button>
+</body>
+        <script>
+            function verify(){
+                let fn=document.getElementById("erfn").value;
+                let regexname=/^[a-zA-Z]+$/;
+                if(fn==undefined||fn==""||fn==null){
+                    document.getElementById("erfn").innerHTML="enter something";
+                }
+                else if(regexname.test(fn)){
+document.getElementById("erfn").innerHTML="enter strings only";
+                }
+                    else{
+                    document.getElementById("erfn").innerHTML="";
+                }
+            }
+        </script>
+    
+</html>

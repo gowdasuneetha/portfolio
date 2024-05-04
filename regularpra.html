@@ -1,0 +1,68 @@
+<script>
+    var str="full stack developer is development of front end and backend or client side or server side portions of the web pages."
+var pat=/[a-h]/g;
+document.write(str.match(pat)+"<br>");
+</script>
+<script>
+        var str="full stack developer is development of front end and backend or client side or server side portions of the web pages."
+        var pat=/[^a-h]/g;
+        document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+    var str="front end is html,css & javascript with html 5 versions_."
+    var pat=/\w/g;
+    document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+    var str="*hello wolrd 2.4 ! *"
+    var pat=/\W/g;
+    document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+    var str="world population is 8,045,311,447 !."
+    var pat=/\d/g;
+    document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+        var str="world population is 8,045,311,447 !."
+        var pat=/\D/g;
+        document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+            var str="world population is 8,045,311,447 !."
+            var pat=/\s/g;
+            document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+                var str="world population is 8,045,311,447 !."
+                var pat=/\S/g;
+            document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+    var str ="india is the most populous country in the world with 1/6th of the world's population. population is 1,425,775,850"
+//var pat=/\d{4}/g;
+var pat=/\d{3}/g;
+document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+var str="my name is sunnetha gowda. i am from rajahmundry. i completed my b.tech with aggregate of 74%"
+var pa=/\d{2,4}/g;
+    document.write(str.match(pat)+"<br>");
+
+</script>
+<script>
+    var str="1,10,100,1000,10000,100000,1000000,10000000"
+    var pat=/\d{3,4}/g;
+    document.write(str.match(pat)+"<br>");
+    var str="885,8456,98745,847561,30000000"
+    var pat=/\d{5,6}/g;
+    document.write(str.match(pat));
+</script>

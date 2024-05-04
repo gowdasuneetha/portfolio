@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        enter age:
+        <input type="text" id="textage" placeholder="enter 18 to 40">
+        <small id="tage" style="color:red;"></small>
+        <button onclick="verify()">enter</button>
+        <script>
+            function verify(){
+                let age=Number(document.getElementById("textage")).value;
+                let regexp=/^d{(1[89]||40)}$/;
+                let pattern=/^(1[89]||40)$/;
+                if(age==pattern||age!==""||age>18&&age<40){
+                    document.getElementById("tage").innerHTML="please enter age";
+                }
+                else if(regexp.test(age)){
+                    document.getElementById("tage").innerHTML="please enter age limit is 18 to 40"
+                }
+                else{
+                    document.getElementById("tage").innerHTML="please enter valid age"
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           /* var data=[hello,"110","suni",100];
+            let i=0;
+            for(i=0;i<=data.length;i++){
+                if(typeof data=="number"){
+                    document.write(data[i]+"is a number."+"<br>")
+                }
+                else if(typeof data=="string"){
+                    document.write(data[i]+"is not a number."+"<br>");
+                }
+                else{
+                    document.write(data[i]+"is undefined");
+                }
+            }*/
+
+            function NumberorNot(input){
+                if(typeof input=="number"){
+                    document.write("input is a number"+"<br>");
+                }
+                else if(typeof input=="string"){
+                    document.write("input is not a number"+"<br>");
+                }
+                else{
+                    document.write("input is undefined");
+                }
+            }
+            NumberorNot(100);
+            NumberorNot("suni");
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        enter age:
+        <input type="text" id="tage">
+        <small id="arrage" style="color:red;"></small>
+        <button onclick="validate()">enter</button>
+    </body>
+    <script>
+        function validate(){
+            let age=document.getElementById("tage").value;
+            let regexp=/^[0-9]+$/;
+            if(age==undefined){
+                document.getElementById("arrage").innerhtml="please enter age";
+            }
+            else if(age<=18&&age>=35){
+                document.getElementById("arrage").innerhtml="please enter age sholud be between 18 to 40";
+
+            }
+            else if(regexp.test(age)){
+                document.getElementById("arrage").innerhtml="please enter a valid age";
+
+            }
+            else{
+                document.getElementById("arrage").innerhtml="";
+
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+ENTER NAME:<input type="text" id="fname">
+<small id="efgh" style="color:maroon;"></small>
+<button onclick="verify()">enter</button>
+
+<script>
+function verify(){
+    let fn=document.getElementById("erfn").value;
+    let regexpname=/^[a-zA-Z]+$/;
+    if(fn==undefined||fn==""||fn==null){
+        document.getElementById("erfn").innerHTML="enter something";
+    }
+    else if(regexpname.test(fn)){
+document.getElementById("erfn").innerHTML=""
+    }
+        else{
+        document.getElementById("erfn").innerHTML="enter strings only";
+    }
+}
+</script>
+</body>
+</html>
